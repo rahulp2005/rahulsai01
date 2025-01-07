@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.avif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .signup-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background: rgba(245, 245, 245, 0.943);
+            box-shadow: 0 4px 8px rgba(203, 59, 59, 0.2);
+           
+        }
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .signup-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: solid #ccc;
+           
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d0f0d;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+        .signup-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>REGISTER</h2>
+        <form action="/submit-signup" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="phone number">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
